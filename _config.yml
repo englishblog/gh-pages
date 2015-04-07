@@ -1,0 +1,4 @@
+markdown: redcarpet
+paginate:  5
+extensions: fenced_code_blocks
+pygments: rouge

@@ -1,0 +1,52 @@
+---
+layout: default
+title: "Welcome!"
+navigationName: "Homepage"
+description: "Awesome blog posts on food!"
+coverColor: "#3DB895"
+order: 1
+---
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="danger">
+                    <p class="bg-danger" id="categoryError">Looks like there aren't any blog posts available yet...</p>
+               </div>
+            <!-- <i><b><p>Recent Posts:</p></b></i>
+                {% for post in paginator.posts %}
+                        <div class="post-preview">
+                        <a href="{{ post.url | prepend: site.url }}">
+                            <h2 class="post-title">
+                                {{ post.title }}
+                            </h2>
+                            <h3 class="post-subtitle">
+                                {{ post.description }}
+                            </h3>
+                        </a>
+                        <p class="post-meta">Posted by <a href="{{ site.url }}/about/">{{ post.author }}</a> on {{ post.date | date_to_string }}</p>
+                    </div>
+                    <hr>
+                {% endfor %} -->
+                <!-- Pager -->
+                <!-- {% if paginator.total_pages > 1 %}
+                <ul class="pager">
+                {% if paginator.previous_page %}
+                    <li class="previous">
+                        <a href="{{ paginator.previous_page_path | prepend: site.url | replace: '//', '/' }}">&larr; Previous Posts </a>
+                    </li>
+                {% endif %}
+
+                {% if paginator.next_page %}
+                    <li class="next">
+                        <a href="{{ paginator.next_page_path | prepend: site.url | replace: '//', '/' }}">Newer Posts &rarr;</a>
+                    </li>
+                {% endif %}
+                </ul> -->
+            </div>
+            {% endif %}
+        </div>
+    </div>
+
+    <hr>
